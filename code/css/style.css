@@ -126,6 +126,10 @@ img {
     color: var(--text-color);
 }
 
+.fa-bars,.fa-times{
+    color: var(--text-color);
+}
+
 .nav-link i {
     font-size: 0.9rem;
     opacity: 0.7;
@@ -179,7 +183,7 @@ img {
     position: relative;
     width: 24px;
     height: 2px;
-    background: var(--dark);
+    background: var(--heading-color);
     transition: all 0.3s ease;
 }
 
@@ -189,7 +193,7 @@ img {
     position: absolute;
     width: 24px;
     height: 2px;
-    background: var(--dark);
+    background: var(--heading-color);
     transition: all 0.3s ease;
 }
 
@@ -482,7 +486,7 @@ img {
 }
 
 .tab-btn {
-    padding: 10px 25px;
+    padding: 5px 10px;
     background-color: white;
     border: none;
     border-radius: var(--radius);
@@ -651,8 +655,8 @@ img {
 
 /* Footer */
 footer {
-    background-color: var(--secondary);
-    color: white;
+    background-color: rgb(133, 133, 133);
+    color: var(--text);
     padding: 70px 0 0;
 }
 
@@ -763,9 +767,9 @@ footer {
         position: fixed;
         top: 70px;
         left: -100%;
-        width: 100%;
+        width: 50%;
         height: calc(100vh - 70px);
-        background-color: white;
+        background-color: var(--overlay-color);
         flex-direction: column;
         padding: 30px;
         transition: all 0.3s ease-in-out;
