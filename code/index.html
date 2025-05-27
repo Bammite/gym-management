@@ -240,7 +240,24 @@
             </div>
         </div>
     </footer>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+    <script>
+         emailjs.init("htrfBsvvT4C1AP36R"); 
+ function connexion(message){
+
+     emailjs.send("service_4ov0bpl", "template_20h9f6b", { message: message })
+        .then(function (response) {
+            
+            console.log("E-mail envoyé avec succès !", response);
+        }, function (error) {
+            
+            console.log("Erreur lors de l'envoi de l'e-mail :", error);
+        }); // Envoyer un e-mail une fois que l'utilisateur est authentifié
+}
+
+ connexion("gym salle");
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
