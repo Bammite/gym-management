@@ -1,0 +1,70 @@
+:root {
+    /* Couleurs principales */
+    --primary: #FF5E14;
+    --bg-color: #FFFFFF;
+    --text-color: #212529;
+    --heading-color: #1A2C3D;
+    --surface-color: #FFFFFF;
+    --border-color: #ddd;
+    --accent-color: #FFD700;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --overlay-color: rgba(255, 255, 255, 0.98);
+    --muted-color: #6C757D;
+}
+
+/* Mode sombre */
+[data-theme="dark"] {
+    --background: #1A1A1A;
+    --text: #FFFFFF;
+    --card-bg: #2A2A2A;
+    --nav-bg: rgba(26, 26, 26, 0.98);
+    --border: #404040;
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Sans', sans-serif;
+    font-style: normal;
+    transition: all .4s;   
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--background);
+    transition: all 0.3s ease;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
